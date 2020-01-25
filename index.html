@@ -1,10 +1,54 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 5px;
+        }
+        
+        /* Clearfix (clear floats) */
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        </style>
+        </head>
 <body>
 
-<h1>My first webpage</h1>
 
-<p>information</p>
+
+
+<h1>Tutorials</h1>
+<!-- <h2>Prof. Javier A. Arce-Nazario</h2> -->
+<!-- <h2> GEOG 456: Geovisualizing Change</h2> -->
+<a href="https://gisunc.github.io/temperature/time_GEOG456_t1.html">
+<h3>Visualizing temperature and time with R</h3></a>
+<!-- <a href="https://gisunc.github.io/temperature/time_GEOG456_t1.html">
+    <img src="https://gisunc.github.io/temperature/time_GEOG456_t1_files/figure-markdown_github/unnamed-chunk-17-1.png" alt="First tutorial" style="width:25%;height:25%;border:0">
+  </a> -->
+  <a href="https://gisunc.github.io/temperature/time_GEOG456_t1.html">
+  <div class="row" >
+    <div class="column">
+      <img src="https://gisunc.github.io/temperature/time_GEOG456_t1_files/figure-markdown_github/unnamed-chunk-14-1.png" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="https://gisunc.github.io/temperature/time_GEOG456_t1_files/figure-markdown_github/unnamed-chunk-15-1.png" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="https://gisunc.github.io/temperature/time_GEOG456_t1_files/figure-markdown_github/unnamed-chunk-17-1.png" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+</a>
+
+
+<h3>An intro to R leaflet library using Earthquake data</h3>
 
 </body>
 </html>
